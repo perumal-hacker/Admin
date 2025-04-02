@@ -38,6 +38,8 @@ import orderProductRoutes from './routes/orderProductRoutes.js';
 import userCartRoutes from './routes/userCartRoutes.js';
 import productsRoutes from './routes/productsRoutes.js';
 import bugReportRoutes from "./routes/bugReportRoutes.js";
+import ordersByProductRoutes from './routes/ordersByProduct.js';
+
 
 // APIs
 app.use('/', myStoreRoutes);
@@ -47,6 +49,7 @@ app.use("/product", orderProductRoutes);
 app.use("/", userCartRoutes);
 app.use("/", productsRoutes);
 app.use("/", bugReportRoutes);
+app.use('/api', ordersByProductRoutes);
 
 console.log(`Google Client ID: ${process.env.GOOGLE_CLIENT_ID}`);
 
