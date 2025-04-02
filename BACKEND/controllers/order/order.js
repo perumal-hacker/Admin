@@ -1,7 +1,7 @@
 import Product from '../../models/Dealer/product.model.js';
 import Dealer from '../../models/Dealer/dealerStore.model.js';
 import Order from '../../models/Customer/order.model.js';
-
+//summa
 
 export const createOrderbyId = async (req, res) => {
   try {
