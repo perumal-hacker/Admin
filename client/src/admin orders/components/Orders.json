@@ -1,0 +1,48 @@
+{
+  "orders": [
+    {
+      "orderId": "123",
+      "dealerEmail": "dealer@example.com",
+      "status": "Pending",
+      "productName": "Product A",
+      "quantity": 2,
+      "price": 100,
+      "pickupMode": "Pickup",
+      "deliveryDate": "2025-03-10",
+      "imageUrl": "https://via.placeholder.com/50"
+    },
+    {
+      "orderId": "121",
+      "dealerEmail": "dealer@example.com",
+      "status": "Successful",
+      "productName": "Product B",
+      "quantity": 5,
+      "price": 250,
+      "pickupMode": "Delivery",
+      "deliveryDate": "2025-03-12",
+      "imageUrl": "https://via.placeholder.com/50"
+    },
+    {
+      "orderId": "124",
+      "dealerEmail": "dealer@example.com",
+      "status": "Pending",
+      "productName": "Product C",
+      "quantity": 5,
+      "price": 250,
+      "pickupMode": "Delivery",
+      "deliveryDate": "2025-03-12",
+      "imageUrl": "https://via.placeholder.com/50"
+    },
+    {
+      "orderId": "122",
+      "dealerEmail": "dealer@example.com",
+      "status": "Missed",
+      "productName": "Product d",
+      "quantity": 5,
+      "price": 250,
+      "pickupMode": "Delivery",
+      "deliveryDate": "2025-03-12",
+      "imageUrl": "https://via.placeholder.com/50"
+    }
+  ]
+}

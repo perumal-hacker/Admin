@@ -1,0 +1,183 @@
+/* General Fix for Overflow */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh; /* Ensure body takes full height */
+  overflow-x: hidden; /* ✅ Fixes unwanted horizontal scrolling */
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background-color: #fff;
+  width: 100%; /* Full viewport width */
+  height: 60px; /* ✅ Fixed height for consistency */
+  max-width: 1440px; /* Consistent max-width */
+  margin: 0 auto;
+  position: fixed; /* ✅ Optional: fixes header to top of viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensures it stays above other content */
+  box-sizing: border-box; /* ✅ Prevents extra padding/margin overflow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+  height: auto;
+  flex-shrink: 0; /* ✅ Prevents logo from shrinking */
+}
+
+/* Navigation Menu (Desktop) */
+.navContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.navMenu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+/* Nav Item */
+.navItem {
+  display: inline-block;
+}
+
+/* Button Style */
+.navButton {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  color: black;
+  padding: 8px 12px;
+  position: relative;
+  transition: font-weight 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Active Nav Item */
+.navActive {
+  font-weight: bold;
+}
+
+.navButton::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navActive::before {
+  background-color: black;
+}
+
+/* Right Section (User & Notifications) */
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0; /* ✅ Prevents right section from shrinking */
+}
+
+/* User Section (Aligns Name & Avatar in a Row) */
+.userSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* User Avatar */
+.userAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0; /* ✅ Prevents avatar from shrinking */
+}
+
+/* User Name */
+.userName {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  white-space: nowrap;
+}
+
+/* Hamburger Menu (Mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Open Hamburger Menu Animation */
+.bar1.open {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.bar2.open {
+  opacity: 0;
+}
+.bar3.open {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+  .header {
+    height: 60px; /* ✅ Maintain fixed height on mobile */
+    padding: 16px; /* Slightly reduce padding for smaller screens */
+  }
+
+  .navContainer {
+    position: absolute;
+    top: 60px; /* ✅ Aligns with fixed header height */
+    left: 0;
+    width: 100vw; /* ✅ Full width for mobile */
+    background: white;
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100vw;
+    overflow-x: hidden; /* ✅ Prevents horizontal scrolling */
+  }
+
+  .showMenu {
+    display: flex;
+  }
+
+  .navMenu {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 20px 0; /* Add padding for better spacing */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

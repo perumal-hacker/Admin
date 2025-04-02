@@ -1,0 +1,162 @@
+.admin-page {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.admin-header {
+  margin-bottom: 30px;
+}
+
+.admin-header h2 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 250px;
+}
+
+.status-filter {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+}
+
+.refresh-btn {
+  padding: 8px 15px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.refresh-btn:hover {
+  background: #45a049;
+}
+
+.requests-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.status-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.status-section h3 {
+  margin: 0 0 15px 0;
+  color: #444;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #eee;
+  text-align: left;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  color: #333;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.action-btn, .solve-btn, .complete-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.action-btn:hover, .solve-btn:hover, .complete-btn:hover {
+  opacity: 0.9;
+}
+
+.solve-btn {
+  background: #FF9800;
+}
+
+.action-btn.call {
+  background: #2196F3;
+}
+
+.action-btn.whatsapp-call {
+  background: #128C7E;
+}
+
+.action-btn.whatsapp-msg {
+  background: #25D366;
+}
+
+.action-btn.chat-now {
+  background: #9C27B0; /* Purple for Chat Now */
+}
+
+.complete-btn {
+  background: #4CAF50;
+}
+
+.notes-input {
+  width: 100%;
+  min-height: 60px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.chat-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.chat-modal-content {
+  background: transparent;
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}

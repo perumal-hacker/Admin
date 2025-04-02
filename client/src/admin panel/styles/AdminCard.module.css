@@ -1,0 +1,309 @@
+/* Admin Card Container */
+.AdminBackground{
+  background-color: #e7e7e7;
+  padding-top: 20px; 
+  padding-bottom: 30px;
+   border-radius: 6px;
+}
+
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Admin Card Container */
+.adminCard {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  border-radius: 10px; 
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 70px;  
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); */
+  transition: 0.3s;
+}
+
+.cardTitles{
+  font-size: 12px;
+  font-weight: 200;
+  color: #555;
+}
+
+.cT1{
+  display: inline;
+  margin-left: 70px;
+}
+
+.cT2{
+  display: inline;
+  margin-left: 60px;
+}
+
+.cT3{
+  display: inline;
+  margin-left: 152px;
+}
+
+.cT4{
+  display: inline;
+  margin-left: 205px;
+}
+
+.cT5{
+  display: inline;
+  margin-left: 175px;
+}
+
+.cT6{
+  display: inline;
+  margin-left: 190px;
+}
+
+.cT7{
+  display: inline;
+  margin-left: 150px;
+}
+
+.cT8{
+  display: inline;
+  margin-left: 65px;
+}
+
+/* .adminCard:hover {
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+} */
+
+/* Card Details (Flex Container) */
+.cardDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.adminRow2,.adminRow2,.adminRow3,.adminRow4{
+  padding-left: 30px;
+}
+
+/* 1st Div: Product Image */
+.adminRow1 {
+  
+  flex: 1;
+  display: flex;
+
+}
+
+.productImage {
+  
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 0px;
+  border: 1px solid #ddd;
+}
+
+/* 2nd Div: Product Details (Title, Price, Quantity) */
+.adminRow2 {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 110px;
+  padding-top: 20px;
+}
+
+.deliveryTime{
+  padding-top: 15px;
+  width: 150px;
+}
+
+.productTitle,.city,.price,.quantity,.deliveryDate{
+  padding-top: 15px;
+  width: 220px;
+}
+
+span{
+  background-color: #dfdfdf;
+  color: #000000;
+  padding: 6px;
+  border-radius: 20px;
+}
+
+.productTitle {
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 40px;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: medium;
+}
+
+.quantity {
+  font-size: 14px;
+  font-weight: medium;
+}
+
+/* 3rd Div: Location & Time */
+.adminRow3 {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+}
+
+/* 4rd Div: Location & Time */
+.adminRow4 {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  height: 110px;
+}
+
+.city {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.deliveryDate,
+.deliveryTime {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+/* 5th Div: Dropdown Icon */
+.adminRow5 {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdownIcon {
+  padding-top: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+  width: 5px;
+  height: 3px;
+}
+
+.dropdownIcon:hover {
+  color: #007bff;
+}
+
+/* Dealer Details Container */
+.dealerContainer {
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  border-radius: 8px;
+  transition: max-height 0.5s ease-out, opacity 0.3s ease-out;
+}
+
+/* Dealer Row */
+.dealerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+
+/* Dealer Name */
+.dealerName {
+  margin-left: 30px;
+  width: 20%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Dealer Phone Number */
+.phoneNumber {
+  width: 20%;
+  font-size: 14px;
+  color: #0eac29;
+}
+
+/* Dealer City */
+.dealerCity {
+  width: 20%;
+  font-size: 14px;
+  color: gray;
+}
+
+.pendingButton{
+  /* background-color: #ebc1e9; */
+  /* color: #5c0e3d; */
+  margin-left: -130px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Call Icon */
+.callIcon {
+  margin-right: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+  color: #007bff;
+  transition: 0.3s;
+}
+
+.messageIcon {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Keeps the text color same as the parent */
+  font-size: 24px; /* Adjust size if needed */
+  display: inline-block; /* Ensures proper spacing */
+}
+
+.callIcon:hover {
+  color: #0056b3;
+}
+
+/* No Dealers Message */
+.noDealers {
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+  padding: 5px 0;
+}
+
+/* Existing styles ... */
+
+/* Add these for ContactRequests */
+.contactRequestContainer {
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+.contactRequestRow {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.contactRequestRow p {
+  margin: 0 10px;
+  flex: 1;
+}
+
+.error {
+  color: red;
+  padding: 10px;
+  text-align: center;
+}
